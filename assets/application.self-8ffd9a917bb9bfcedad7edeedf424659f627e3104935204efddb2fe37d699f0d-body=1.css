@@ -1,0 +1,1279 @@
+/*! normalize.css v1.0.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 11, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 29, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 42, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 79, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+/* line 91, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 111, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 131, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 136, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 141, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 146, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 151, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 160, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 168, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 173, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 181, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+/* line 189, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 198, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 207, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 220, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+/* line 230, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+/* line 238, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 248, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 256, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 264, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 268, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 280, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 287, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+/* line 295, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+/* line 305, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 320, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 329, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 341, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+/* line 353, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 361, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 373, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 387, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 402, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 417, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 430, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 442, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 456, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 468, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+/* line 477, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 488, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 501, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/reset.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("Oswald-ExtraLight-081460dc18556fc2b1758c9453b78656270a720d463d72b71e535ba13f6acd6e.ttf") format("truetype");
+}
+/* line 23, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.dg {
+  z-index: 100 !important;
+}
+
+/* line 47, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.transitionFast {
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+}
+
+/* line 51, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.transitionSlow {
+  -webkit-transition: 700ms;
+  -moz-transition: 700ms;
+  -ms-transition: 700ms;
+  -o-transition: 700ms;
+  transition: 700ms;
+}
+
+/* line 55, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+html, body {
+  background: black;
+}
+
+/* line 59, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  /* line 59, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  .mobile {
+    display: block;
+  }
+}
+
+/* line 66, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.desktop {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  /* line 66, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  .desktop {
+    display: none;
+  }
+}
+
+/* line 73, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+body {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-image: url("bg-4ef29b55d12171845cf430e6316498068934e7ecc0ac3b444eae73c25dbb6306.png.jpeg");
+  background-size: 100% 100%;
+}
+/* line 85, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+body.nomic .no-mic {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  /* line 90, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  body.info {
+    min-height: 700px;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 90, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  body.info {
+    min-height: 550px;
+  }
+}
+
+/* line 101, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.fullScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 1000px) {
+  /* line 101, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  .fullScreen {
+    min-height: 700px;
+  }
+}
+
+/* line 112, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.button {
+  border: 2px solid #906d34;
+  border-radius: 5px;
+  padding: 5px 50px;
+  box-shadow: #906d34 0 0 12px 1px;
+  cursor: pointer;
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+}
+/* line 119, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.button:hover {
+  background: rgba(144, 109, 52, 0.5);
+}
+/* line 122, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+.button.glow {
+  background: #906d34;
+}
+
+/* line 128, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#mediaLayer #globeVid {
+  width: 112%;
+  height: 112%;
+  left: -6%;
+  top: -6%;
+  position: relative;
+}
+/* line 134, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#mediaLayer #globeVid.hide {
+  display: none;
+}
+
+/* line 142, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #volumeAlert {
+  position: absolute;
+  top: 22px;
+  right: 70px;
+  opacity: 1;
+}
+/* line 147, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #volumeAlert.hide {
+  opacity: 0;
+}
+@media screen and (max-width: 600px) {
+  /* line 142, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #volumeAlert {
+    right: 60px;
+    top: 21px;
+  }
+}
+/* line 156, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #textEffectBox {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  top: 30%;
+}
+/* line 162, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #textEffectBox #textBox1, #hud #textEffectBox #textBox2, #hud #textEffectBox #textBox3, #hud #textEffectBox #textBox4 {
+  font-size: 70px;
+  line-height: 1.3em;
+  position: relative;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  overflow: hidden;
+  opacity: 1;
+}
+/* line 170, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #textEffectBox #textBox1.firstFrame, #hud #textEffectBox #textBox2.firstFrame, #hud #textEffectBox #textBox3.firstFrame, #hud #textEffectBox #textBox4.firstFrame {
+  top: 18%;
+}
+@media screen and (max-width: 600px) {
+  /* line 170, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1.firstFrame, #hud #textEffectBox #textBox2.firstFrame, #hud #textEffectBox #textBox3.firstFrame, #hud #textEffectBox #textBox4.firstFrame {
+    font-size: 38px;
+  }
+}
+/* line 176, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #textEffectBox #textBox1.lastFrame, #hud #textEffectBox #textBox2.lastFrame, #hud #textEffectBox #textBox3.lastFrame, #hud #textEffectBox #textBox4.lastFrame {
+  top: 10%;
+}
+@media screen and (max-width: 600px) {
+  /* line 176, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1.lastFrame, #hud #textEffectBox #textBox2.lastFrame, #hud #textEffectBox #textBox3.lastFrame, #hud #textEffectBox #textBox4.lastFrame {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 176, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1.lastFrame, #hud #textEffectBox #textBox2.lastFrame, #hud #textEffectBox #textBox3.lastFrame, #hud #textEffectBox #textBox4.lastFrame {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 176, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1.lastFrame, #hud #textEffectBox #textBox2.lastFrame, #hud #textEffectBox #textBox3.lastFrame, #hud #textEffectBox #textBox4.lastFrame {
+    font-size: 30px;
+  }
+}
+/* line 189, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #textEffectBox #textBox1.hide, #hud #textEffectBox #textBox2.hide, #hud #textEffectBox #textBox3.hide, #hud #textEffectBox #textBox4.hide {
+  opacity: 0;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+}
+@media screen and (max-width: 1000px) {
+  /* line 162, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1, #hud #textEffectBox #textBox2, #hud #textEffectBox #textBox3, #hud #textEffectBox #textBox4 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 162, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1, #hud #textEffectBox #textBox2, #hud #textEffectBox #textBox3, #hud #textEffectBox #textBox4 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 162, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1, #hud #textEffectBox #textBox2, #hud #textEffectBox #textBox3, #hud #textEffectBox #textBox4 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 210, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1.smaller, #hud #textEffectBox #textBox2.smaller, #hud #textEffectBox #textBox3.smaller, #hud #textEffectBox #textBox4.smaller {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 210, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #textEffectBox #textBox1.smaller, #hud #textEffectBox #textBox2.smaller, #hud #textEffectBox #textBox3.smaller, #hud #textEffectBox #textBox4.smaller {
+    font-size: 25px;
+  }
+}
+/* line 219, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #textEffectBox #textBox1 .goldpop, #hud #textEffectBox #textBox2 .goldpop, #hud #textEffectBox #textBox3 .goldpop, #hud #textEffectBox #textBox4 .goldpop {
+  color: #c39b57;
+}
+/* line 223, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #textEffectBox #textBox1 .text-fade-down, #hud #textEffectBox #textBox2 .text-fade-down, #hud #textEffectBox #textBox3 .text-fade-down, #hud #textEffectBox #textBox4 .text-fade-down {
+  transform: translateY(0);
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+  display: inline-block;
+}
+/* line 231, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #textEffectBox #textBox1 .text-fade-down.hide, #hud #textEffectBox #textBox2 .text-fade-down.hide, #hud #textEffectBox #textBox3 .text-fade-down.hide, #hud #textEffectBox #textBox4 .text-fade-down.hide {
+  transform: translateY(100px);
+}
+/* line 239, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #info {
+  position: absolute;
+  top: 0;
+  padding-top: 5%;
+  height: 100%;
+  letter-spacing: 3px;
+  line-height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: black 2px 13px 65px -6px;
+  opacity: 1;
+  box-sizing: border-box;
+}
+/* line 250, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #info.hide {
+  opacity: 0;
+}
+@media screen and (max-width: 1000px) {
+  /* line 239, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info {
+    padding-top: 15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 239, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info {
+    padding-top: 5%;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 239, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info {
+    padding-top: 12%;
+  }
+}
+/* line 266, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #info h1 {
+  font-size: 60px;
+  letter-spacing: 5px;
+  line-height: 1.5em;
+}
+@media screen and (max-width: 1000px) {
+  /* line 266, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 266, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info h1 {
+    font-size: 30px;
+    width: 90%;
+    left: 5%;
+    position: relative;
+    line-height: 1.2em;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 282, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info h1 br {
+    display: none;
+  }
+}
+/* line 288, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #info h3 {
+  font-size: 30px;
+}
+@media screen and (max-width: 1000px) {
+  /* line 288, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 288, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info h3 {
+    font-size: 20px;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 288, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info h3 {
+    font-size: 16px;
+  }
+}
+/* line 300, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #info h3 span {
+  color: #906d34;
+}
+/* line 304, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #info p {
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Oswald', 'Helvetica Neue', sans-serif;
+  letter-spacing: 3px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #E7E7E7;
+}
+@media screen and (max-width: 1000px) {
+  /* line 304, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info p {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 304, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info p {
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 304, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info p {
+    width: 95%;
+    font-weight: 400;
+    line-height: 1.1em;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 304, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #info p {
+    font-size: 12px;
+  }
+}
+/* line 327, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #info p span {
+  font-weight: 900;
+}
+/* line 333, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#hud #legal {
+  position: absolute;
+  bottom: 0;
+  width: 45%;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-family: 'Helvetica Neue', sans-serif;
+  left: 27.5%;
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+@media screen and (max-width: 1000px) {
+  /* line 333, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #legal {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 333, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #hud #legal {
+    width: 94%;
+    left: 3%;
+    font-size: 8px;
+    line-height: 1.1em;
+    bottom: 1px;
+  }
+}
+
+/* line 359, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+/* line 364, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #backButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: white;
+  padding: 5px 14px 9px;
+  background: black;
+  opacity: 0.8;
+}
+/* line 373, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #backButton.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+@media screen and (max-width: 600px) {
+  /* line 364, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #backButton {
+    padding: 2px 12px 2px;
+    top: 10px;
+    left: 10px;
+  }
+}
+/* line 385, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #audioControl {
+  position: fixed;
+  cursor: pointer;
+  top: 10px;
+  right: 17px;
+  width: 40px;
+  height: 30px;
+  overflow: hidden;
+}
+/* line 394, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #audioControl.inactive {
+  cursor: default;
+}
+@media screen and (max-width: 374px) {
+  /* line 385, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #audioControl {
+    width: 35px;
+    height: 25px;
+    right: 10px;
+  }
+}
+/* line 404, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #audioControl span {
+  width: 3px;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  transform: translateY(0);
+  background: #906d34;
+}
+/* line 411, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #audioControl span.shrink {
+  transform: translateY(15px);
+}
+@media screen and (max-width: 450px) {
+  /* line 404, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #audioControl span {
+    width: 2px;
+  }
+}
+/* line 421, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #unmute {
+  opacity: 1;
+  position: fixed;
+  top: 40px;
+  right: 17px;
+}
+/* line 426, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #unmute.hide {
+  opacity: 0;
+}
+/* line 431, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #rsvpBox {
+  opacity: 1;
+  font-size: 30px;
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  top: 60%;
+  letter-spacing: 3px;
+}
+/* line 439, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #rsvpBox.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+  /* line 431, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #rsvpBox {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 431, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #rsvpBox {
+    width: 95%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 431, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #rsvpBox {
+    top: 55%;
+    width: 90%;
+    left: 10%;
+    margin-left: -5%;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 431, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #rsvpBox {
+    top: 55%;
+  }
+}
+/* line 463, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #rsvpBox .button {
+  display: inline-block;
+}
+@media screen and (max-width: 450px) {
+  /* line 463, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #rsvpBox .button {
+    width: 40%;
+    padding: 0;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 463, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #rsvpBox .button {
+    width: 33%;
+  }
+}
+/* line 474, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #rsvpBox .subtext {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+/* line 478, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #rsvpBox .or {
+  display: inline-block;
+  margin: 0 20px;
+}
+@media screen and (max-width: 450px) {
+  /* line 478, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #rsvpBox .or {
+    margin: 0;
+  }
+}
+/* line 488, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form {
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 20%;
+}
+/* line 493, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+@media screen and (max-width: 450px) {
+  /* line 488, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #form {
+    top: 10%;
+  }
+}
+/* line 502, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form h2 {
+  text-align: center;
+  font-size: 45px;
+}
+@media screen and (max-width: 450px) {
+  /* line 502, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #form h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+/* line 511, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form #formContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+}
+@media screen and (max-width: 550px) {
+  /* line 511, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #form #formContainer {
+    width: 90%;
+  }
+}
+/* line 520, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form .confirm {
+  width: 150px;
+  position: relative;
+  margin: 20px auto 0;
+}
+@media screen and (max-width: 450px) {
+  /* line 520, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #form .confirm {
+    width: 40px;
+  }
+}
+/* line 530, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form .error {
+  color: #906d34;
+  font-size: 20px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media screen and (max-width: 550px) {
+  /* line 530, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #form .error {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+/* line 543, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form span {
+  text-align: center;
+  font-size: 25px;
+  top: 5px;
+  position: relative;
+  right: 5px;
+}
+/* line 550, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form label {
+  display: none;
+}
+/* line 553, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form input {
+  border: none;
+  background: none;
+  padding: 5px 0;
+  color: white;
+  font-size: 30px;
+  width: 500px;
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  transition: all 800ms;
+  outline: none;
+  border-bottom: 1px solid silver;
+}
+/* line 566, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form input.shrink {
+  width: 0;
+}
+@media screen and (max-width: 550px) {
+  /* line 553, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #form input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+/* line 577, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form .goldFormUnderline {
+  width: 0;
+  color: #c39b57;
+  border: 1px solid #c39b57;
+  margin: 0;
+  top: -11px;
+  position: relative;
+  opacity: 0;
+}
+/* line 585, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #form .goldFormUnderline.show {
+  width: 500px;
+  opacity: 1;
+}
+@media screen and (max-width: 550px) {
+  /* line 585, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #form .goldFormUnderline.show {
+    width: 100%;
+  }
+}
+/* line 595, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #thankYou {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  letter-spacing: 3px;
+  opacity: 1;
+}
+/* line 601, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #thankYou.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+@media screen and (max-width: 450px) {
+  /* line 595, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #thankYou {
+    top: 10%;
+  }
+}
+/* line 608, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #thankYou h2 {
+  text-align: center;
+  font-size: 45px;
+}
+/* line 612, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #thankYou h3 {
+  color: #906d34;
+}
+@media screen and (max-width: 450px) {
+  /* line 612, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+  #interactiveLayer #thankYou h3 {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    line-height: 1.2em;
+  }
+}
+/* line 621, /Users/dlittle/Sites/c21-rsvp/app/assets/stylesheets/home.css.scss */
+#interactiveLayer #thankYou .info {
+  width: 100px;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Agents of the Future</title>
+        <meta name="description" content="Welcome to the Inaugural Agents of the Future Event">
+		<link rel="icon" type="image/png" href="favicon.png.jpeg">
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+			<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/57315ffd-fade-4b1f-8868-d35de1ea3b68.css"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" media="all" href="assets/application.self-8ffd9a917bb9bfcedad7edeedf424659f627e3104935204efddb2fe37d699f0d-body=1.css" />
+		<script src="assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c-body=1.js"></script>
+<script src="assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd-body=1.js"></script>
+<script src="assets/lib/modernizr-2.6.2.min.self-d11431eff7ef26ba51c7b399010b1529d0b66b42a2ec03d027e7965848e88e0a-body=1.js"></script>
+<script src="assets/lib/plugins.self-81625bd420a4072ae947d48f38e9df1aed876c9b663e3972812eb3e9ff1df878-body=1.js"></script>
+<script src="assets/lib/underscore.self-a69241364ec38c55619bad76bc3b481f8d9e123950970ac3521bb2340d16666f-body=1.js"></script>
+<script src="assets/lib/three.min.self-d82abc8f944e3728bb05222a38a54d658ce3fff3fbc84a7bb7ae5721ca6b11e4-body=1.js"></script>
+<script src="assets/lib/BufferSubdivisionModifier.self-17ee5e4f792fecf50e8100212c4744fafa88433e176167be3a4708c06f0ae376-body=1.js"></script>
+<script src="assets/lib/Detector.self-baf3dce712d19890a9bb27d310c6403573253b95cccfe38f8463c763a1f9e206-body=1.js"></script>
+<script src="assets/lib/OrbitControls.self-6ff4287f0c0dd55b1620a6f7e4d76cddb72d1de8bd666b3dbf6433fee5afe1dd-body=1.js"></script>
+<script src="assets/lib/DAT.GUI.min.self-d2e44b6b49680e0939dea9ca0833c8a3d1f094b9866302c20a4a4d4e35136507-body=1.js"></script>
+<script src="assets/lib/CanvasRenderer.self-c35b624887de3a3d62c33ed78457097d62ba3aa6edb1d4de2f0c0333a480584d-body=1.js"></script>
+<script src="assets/lib/annyang.min.self-9c33de2a03d15c0dcbf557c06ab2da2154023964a8b1f3eefaf4fe5d3962ac98-body=1.js"></script>
+<script src="assets/lib/Tween.self-bb50df68b934fb2bd958cdf1ea4e2b8f71e8e944eda0664c86c3f06768dfc156-body=1.js"></script>
+<script src="assets/utils.self-d6e22a88333111bbc3a6c6d705be973e7e20a0df8a9ea7ce3f757e773df76f40-body=1.js"></script>
+<script src="assets/env.self-7f2ce21145b314b7f3eeacf17621d3811e10edfc089ba84e2e566c9f17da03c8-body=1.js"></script>
+<script src="assets/globeFX.self-e6ae54987ef6b286164556c2f494d3d7d4dc164535adb0e674f1b7c02dbe998d-body=1.js"></script>
+<script src="assets/speech.self-e300e12c56f4e5b1f99790ab631596c61d5060ad39679b0d6df1f05318482529-body=1.js"></script>
+<script src="assets/home.self-125459c1759ed8032cdf255ab04bda0e905c24f24be646366006086b48af286b-body=1.js"></script>
+<script src="assets/application.self-3e0b294bd11e153e71b4d4109512a1fed728c60520a2cdbb81879b2bb95972e6-body=1.js"></script>
+		<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="1Cpri7q9okPhJFBc5sgaPUFuWrv2kEuQJ7S0ZYLadUJZQ2RzyfXKZ8WlR32mVO9H5dMIo+6r5jsTjBV4cop7VA==" />
+    </head>
+    <body>
+        <div id="mediaLayer" class="fullScreen">
+	<audio src="vo.mp3" id="voAudio"></audio>
+	<audio src="music.mp3" id="musicAudio" loop autoplay></audio>
+	<div id="renderViewport"></div>
+	<video id="globeVid" class="hide" src="globe.mp4" poster="globePoster.png" loop></video>
+</div>
+
+<div id="hud" class="fullScreen">
+	<div id="volumeAlert" class="transitionFast">PLEASE TURN UP YOUR VOLUME.</div>
+
+	<div id="textEffectBox">
+		<div id="textBox1" class="firstFrame"></div>
+		<div id="textBox2" class="firstFrame"></div>
+		<div id="textBox3"></div>
+		<div id="textBox4"></div>
+	</div>
+
+	<div id="info" class="hide transitionFast">
+	<h1>AGENTS OF <br class="mobile">THE FUTURE</h1>
+
+	<h3 class="goldpop"><span>JUNE 23RD AT 5PM //</span> KEYNOTE SPEAKER SETH GODIN</h3>
+
+	<p>Get a one-of-a-kind glimpse of what the future has in store for every aspect of real estate. Through immersive technology and exclusive insights from Seth Godin, a New York Times best-selling author and big idea advocate. You'll leave the evening one step ahead of the rest.
+
+	</p><br>
+
+	<p>Cocktails and hors d’oeuvres begin at 5PM</p>
+	<br>
+	<p>Seth Godin at 6PM</p><br>
+	<p>
+		Hangar 3 at the Camarillo Airport<br>
+		455 Aviation Drive<br>
+		Camarillo, CA 93012 </p>
+</div>
+
+
+	<p id="legal">© 2016 Century 21 Real Estate LLC. All rights reserved. Century 21® is a registered trademark owned by Century 21 Real Estate LLC. An
+		equal house opportunity. Each office is independently owned and operated.</p>
+</div>
+
+<div id="interactiveLayer" class="fullScreen">
+	<div id="backButton" class="button hide"> <</div>
+
+	<div id="audioControl" class="transitionSlow inactive" title="Toggle Mute">
+		<span class="transitionFast shrink"></span>
+		<span class="transitionFast shrink"></span>
+		<span class="transitionFast shrink"></span>
+		<span class="transitionFast shrink"></span>
+		<span class="transitionFast shrink"></span>
+		<span class="transitionFast shrink"></span>
+	</div>
+	<div id="unmute" class="transitionFast hide">UNMUTE</div>
+
+	<div id="rsvpBox" class="hide transitionFast">
+		<div class="subtext no-mic">ALLOW ACCESS TO YOUR MICROPHONE AND SAY:</div>
+
+		<div class="button rsvp">
+			RSVP
+		</div>
+		<div class="or">OR</div>
+		<div class="button info">
+			INFO
+		</div>
+	</div>
+
+	<div id="form" class="hide transitionFast">
+
+	<h2>IS THIS INFORMATION CORRECT?</h2>
+
+	<div id="formContainer">
+		<label for="first"></label>
+		<input type="text" id="first" placeholder="FIRST NAME" class="shrink" data-num="1">
+		<hr class="goldFormUnderline transitionSlow"  data-num="1">
+		<p class="error first"></p>
+		<br class="desktop">
+		<label for="last"></label>
+		<input type="text" id="last" placeholder="LAST NAME" class="shrink"  data-num="2">
+		<hr class="goldFormUnderline transitionSlow"  data-num="2">
+		<p class="error last"></p>
+		<br class="desktop">
+		<label for="email"></label>
+		<input type="text" id="email" placeholder="EMAIL ADDRESS" class="shrink"  data-num="3">
+		<hr class="goldFormUnderline transitionSlow"  data-num="3">
+		<p class="error email"></p>
+		<br class="no-mic">
+	</div>
+	<span class="no-mic">TO CONFIRM, SAY: &nbsp;</span>
+
+	<div class="button confirm">
+		OK
+	</div>
+
+</div>
+
+
+	<div id="thankYou" class="hide transitionFast">
+		<h2>THANK YOU.</h2>
+
+		<h3>YOU WILL RECEIVE AN RSVP CONFIRMATION <br>
+			IN YOUR EMAIL SHORTLY. WE LOOK <br>
+			FORWARD TO SEEING YOU IN THE FUTURE.</h3>
+
+		<div class="button info post">
+			INFO
+		</div>
+	</div>
+
+</div>
+
+
+<!-- ---------------- Shader ------------------------ -->
+<script id="vertexShader" type="x-shader/x-vertex">
+uniform vec3 viewVector;
+uniform float c;
+uniform float p;
+varying float intensity;
+void main()
+{
+    vec3 vNormal = normalize( normalMatrix * normal );
+	vec3 vNormel = normalize( normalMatrix * viewVector );
+	intensity = pow( c - dot(vNormal, vNormel), p );
+
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+}
+</script>
+
+<!-- fragment shader -->
+<script id="fragmentShader" type="x-shader/x-vertex">
+uniform vec3 glowColor;
+varying float intensity;
+void main()
+{
+	vec3 glow = glowColor * intensity;
+    gl_FragColor = vec4( glow, 1.0 );
+}
+</script>
+<!-- ----------------------------------------------------------- -->
+
+<!--
+				<script>
+						(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+												(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+										m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+						})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+						ga('create', 'UA-78900549-1', 'auto');
+						ga('send', 'pageview');
+
+						function ga_track(action, label) {
+								try {
+										ga('send', 'event', action, label);
+								} catch(err) {}
+						}
+				</script>
+-->
+    </body>
+</html>
